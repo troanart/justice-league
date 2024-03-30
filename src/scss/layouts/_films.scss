@@ -1,0 +1,58 @@
+.films {
+  border-top: 2px solid rgb(47, 46, 46);
+  margin: 15px 0;
+  padding: 20px 0;
+}
+
+.posters {
+  border-radius: 22px;
+}
+
+.box-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+
+  &__decoration {
+    display: block;
+    width: 35px;
+    height: 8px;
+    border-radius: 50px;
+    background-image: var(--gradient-background);
+    transform: rotate(-90deg);
+  }
+}
+
+.trending-movies {
+  margin: 15px 0;
+}
+
+.geners {
+  &__item {
+    width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        background-image: var(--color-#{$i});
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--font-family);
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+  }
+}

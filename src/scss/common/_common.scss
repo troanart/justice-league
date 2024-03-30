@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--main-bg);
+  color: var(--main-text-color);
+  line-height: 20px;
+  font-weight: 400;
+  font-family: var(----font-family, --second-family, --third-family, --font4);
+}
+
+.main-title {
+  font-family: var(--font4);
+  line-height: 45px;
+  font-size: 40px;
+}
+
+.title-second {
+  color: rgb(255, 255, 255);
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}

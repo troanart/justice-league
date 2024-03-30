@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="./img/Logo.svg" alt="" />
+      </a>
+      <nav>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="open-svg">
+            <use href="./img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button type="button" class="menu-toggle js-close-menu">
+            <svg class="close-svg">
+              <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="main-title">Zack Snyder's Justice League</h1>
+          <div class="information">
+            <p class="information__year">2021</p>
+            <span class="information__age">
+              <p class="information__text">18+</p>
+            </span>
+            <p>4h 2min</p>
+            <div class="information__rating">
+              <span>8.8</span>
+              <svg class="information__rating-svg">
+                <use href="./img/sprite.svg#icon-starRating"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="information__description">
+            Determined to ensure Superman's ultimate sacrifice was not in vain,
+            Bruce Wayne aligns forces with Diana Prince with plans to recruit a
+            team of metahumans to protect the world from an approaching threat
+            of catastrophic proportions.
+          </p>
+          <div class="box-button">
+            <button class="gradient-btn">Watch</button>
+            <button class="box-button__more-info">More information</button>
+          </div>
+        </div>
+      </section>
+      <section class="films">
+        <div class="container">
+          <div>
+            <div class="box-title">
+              <span class="box-title__decoration"></span>
+              <h2 class="title-second">Trending TV Shows ></h2>
+            </div>
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img class="posters" src="./img/films_After.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="posters"
+                      src="./img/films_Emansipation.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img class="posters" src="./img/films_Dunkirc.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="posters"
+                      src="./img/films_The_Enormity_of_life.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-movies">
+            <div class="box-title">
+              <span class="box-title__decoration"></span>
+              <h2 class="title-second">Trending Movies ></h2>
+            </div>
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img class="posters" src="./img/films_After.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="posters"
+                      src="./img/films_Emansipation.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img class="posters" src="./img/films_Dunkirc.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="posters"
+                      src="./img/films_The_Enormity_of_life.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+            </div>
+          </div>
+          <button class="gradient-btn">See more</button>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="box-title">
+            <span class="box-title__decoration"></span>
+            <h2 class="title-second">Popular Genres ></h2>
+          </div>
+          <ul class="list geners">
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./img/sprite.svg#icon-hearts"></use>
+                </svg>
+                Romance
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./img/sprite.svg#icon-drama"></use>
+                </svg>
+                Drama
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./img/sprite.svg#icon-historical"></use>
+                </svg>
+                Historical
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./img/sprite.svg#icon-action"></use>
+                </svg>
+                Historical
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <span> </span>
+          <h2></h2>
+          <ul></ul>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <svg>
+          <use></use>
+        </svg>
+      </div>
+      <ul>
+        <li>
+          <a> </a>
+        </li>
+        <li>
+          <a> </a>
+        </li>
+        <li>
+          <a> </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a> </a>
+        </li>
+        <li>
+          <a> </a>
+        </li>
+        <li>
+          <a> </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a> </a>
+        </li>
+        <li>
+          <a> </a>
+        </li>
+        <li>
+          <a> </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
