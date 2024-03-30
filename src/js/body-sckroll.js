@@ -18,9 +18,4 @@ const bodySkrollLock = () => {
     document.body.style.top = 'auto';
     window.scrollTo(0, scrollPosition);
   }
-
-}
-
-export default bodySkrollLock
-
-
+};

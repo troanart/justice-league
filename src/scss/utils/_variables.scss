@@ -15,20 +15,62 @@
   );
 
   // other
-  --romance: linear-gradient(135.87deg, rgb(253, 9, 63) 2.396%,rgb(243, 131, 241) 100%);
---drama: linear-gradient(143.47deg, rgb(15, 255, 218) 2.223%,rgb(60, 219, 119) 68.837%),
---historical:  linear-gradient(135.87deg, rgb(185, 54, 255) 2.396%,rgb(87, 222, 218) 100%);
---action: linear-gradient(135.87deg, rgb(253, 9, 63) 2.396%,rgb(251, 19, 120) 2.405%,rgb(252, 203, 26) 100%);
---sci-fi: linear-gradient(135.87deg, rgb(255, 100, 114) 2.396%,rgb(253, 167, 93) 100%);
---horror: linear-gradient(137.08deg, rgb(19, 84, 122) 2.366%,rgb(128, 208, 199) 96.773%);
---comedy: linear-gradient(136.77deg, rgb(255, 247, 123) 2.374%,rgb(255, 191, 66) 50%);
---documentary: linear-gradient(135.87deg, rgb(31, 162, 255) 2.396%,rgb(31, 162, 255) 2.405%,rgb(31, 83, 92) 97.458%);
+  --romance: linear-gradient(
+    135.87deg,
+    rgb(253, 9, 63) 2.396%,
+    rgb(243, 131, 241) 100%
+  );
+  --drama: linear-gradient(
+    143.47deg,
+    rgb(15, 255, 218) 2.223%,
+    rgb(60, 219, 119) 68.837%
+  );
+  --historical: linear-gradient(
+    135.87deg,
+    rgb(185, 54, 255) 2.396%,
+    rgb(87, 222, 218) 100%
+  );
+  --action: linear-gradient(
+    135.87deg,
+    rgb(253, 9, 63) 2.396%,
+    rgb(251, 19, 120) 2.405%,
+    rgb(252, 203, 26) 100%
+  );
+  --sci-fi: linear-gradient(
+    135.87deg,
+    rgb(255, 100, 114) 2.396%,
+    rgb(253, 167, 93) 100%
+  );
+  --horror: linear-gradient(
+    137.08deg,
+    rgb(19, 84, 122) 2.366%,
+    rgb(128, 208, 199) 96.773%
+  );
+  --comedy: linear-gradient(
+    136.77deg,
+    rgb(255, 247, 123) 2.374%,
+    rgb(255, 191, 66) 50%
+  );
+  --documentary: linear-gradient(
+    135.87deg,
+    rgb(31, 162, 255) 2.396%,
+    rgb(31, 162, 255) 2.405%,
+    rgb(31, 83, 92) 97.458%
+  );
   --list-lenght: 8;
-  --color-list: var(--romance,--drama,--historical,--action,--sci-fi,--horror,--comedy,--documentary);
- 
+  --color-list: var(
+    --romance,
+    --drama,
+    --historical,
+    --action,
+    --sci-fi,
+    --horror,
+    --comedy,
+    --documentary
+  );
 }
 
- @for $i from 1 through 8 {
+@for $i from 1 through 8 {
   :root {
     --color-#{$i}: var(--romance);
   }

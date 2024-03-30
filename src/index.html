@@ -22,12 +22,13 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <a href="#">
-        <img src="./img/Logo.svg" alt="" />
+        <img src="./icons/Logo.svg" alt="" />
       </a>
       <nav>
         <button
@@ -38,13 +39,13 @@
           aria-controls="mobile-menu"
         >
           <svg class="open-svg">
-            <use href="./img/sprite.svg#icon-burger"></use>
+            <use href="./icons/sprite.svg#icon-burger"></use>
           </svg>
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button type="button" class="menu-toggle js-close-menu">
             <svg class="close-svg">
-              <use href="./img/sprite.svg#icon-close"></use>
+              <use href="./icons/sprite.svg#icon-close"></use>
             </svg>
           </button>
         </div>
@@ -63,7 +64,7 @@
             <div class="information__rating">
               <span>8.8</span>
               <svg class="information__rating-svg">
-                <use href="./img/sprite.svg#icon-starRating"></use>
+                <use href="./icons/sprite.svg#icon-starRating"></use>
               </svg>
             </div>
           </div>
@@ -87,42 +88,51 @@
               <h2 class="title-second">Trending TV Shows ></h2>
             </div>
 
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <div class="swiper mySwiper_2">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
                   <a href="#">
-                    <img class="posters" src="./img/films_After.jpg" alt="" />
+                    <img src="./img/films_After.jpg" alt="Films 'After'" />
                   </a>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/films_Dunkirc.jpg" alt="Films 'After'" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
                   <a href="#">
                     <img
-                      class="posters"
                       src="./img/films_Emansipation.jpg"
-                      alt=""
+                      alt="Films 'After'"
                     />
                   </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img class="posters" src="./img/films_Dunkirc.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li class="swiper-slide">
                   <a href="#">
                     <img
-                      class="posters"
                       src="./img/films_The_Enormity_of_life.jpg"
-                      alt=""
+                      alt="Films 'After'"
                     />
                   </a>
-                </div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-              </div>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/films_Vanitas.jpg" alt="Films 'After'" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img
+                      src="./img/films_Soething_like_perfect.jpg"
+                      alt="Films 'After'"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="trending-movies">
@@ -130,43 +140,50 @@
               <span class="box-title__decoration"></span>
               <h2 class="title-second">Trending Movies ></h2>
             </div>
-
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img class="posters" src="./img/films_After.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
+            <div class="swiper mySwiper_2">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
                   <a href="#">
                     <img
-                      class="posters"
-                      src="./img/films_Emansipation.jpg"
-                      alt=""
+                      src="./img/films_Maturing_youth.jpg"
+                      alt="Films 'After'"
                     />
                   </a>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li class="swiper-slide">
                   <a href="#">
-                    <img class="posters" src="./img/films_Dunkirc.jpg" alt="" />
+                    <img src="./img/films_Leap_year.jpg" alt="Films 'After'" />
                   </a>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/films_Oak_Island.jpg" alt="Films 'After'" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
                   <a href="#">
                     <img
-                      class="posters"
-                      src="./img/films_The_Enormity_of_life.jpg"
-                      alt=""
+                      src="./img/films_Steel_legal.jpg"
+                      alt="Films 'After'"
                     />
                   </a>
-                </div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-              </div>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/films_Interloock.jpg" alt="Films 'After'" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img
+                      src="./img/films_The_black_eho.jpg"
+                      alt="Films 'After'"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
           <button class="gradient-btn">See more</button>
@@ -182,7 +199,7 @@
             <li class="geners__item">
               <a href="#" class="link geners__link">
                 <svg class="geners__icon">
-                  <use href="./img/sprite.svg#icon-hearts"></use>
+                  <use href="./icons/sprite.svg#icon-hearts"></use>
                 </svg>
                 Romance
               </a>
@@ -190,7 +207,7 @@
             <li class="geners__item">
               <a href="#" class="link geners__link">
                 <svg class="geners__icon">
-                  <use href="./img/sprite.svg#icon-drama"></use>
+                  <use href="./icons/sprite.svg#icon-cinema"></use>
                 </svg>
                 Drama
               </a>
@@ -198,7 +215,7 @@
             <li class="geners__item">
               <a href="#" class="link geners__link">
                 <svg class="geners__icon">
-                  <use href="./img/sprite.svg#icon-historical"></use>
+                  <use href="./icons/sprite.svg#icon-documentary"></use>
                 </svg>
                 Historical
               </a>
@@ -206,19 +223,95 @@
             <li class="geners__item">
               <a href="#" class="link geners__link">
                 <svg class="geners__icon">
-                  <use href="./img/sprite.svg#icon-action"></use>
+                  <use href="./icons/sprite.svg#icon-killer"></use>
                 </svg>
-                Historical
+                Action
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./icons/sprite.svg#icon-rocket"></use>
+                </svg>
+                Sci-fi
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./icons/sprite.svg#icon-ghost"></use>
+                </svg>
+                Horror
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./icons/sprite.svg#icon-smile"></use>
+                </svg>
+                Comedy
+              </a>
+            </li>
+            <li class="geners__item">
+              <a href="#" class="link geners__link">
+                <svg class="geners__icon">
+                  <use href="./icons/sprite.svg#icon-castle"></use>
+                </svg>
+                Documentary
               </a>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="actors">
         <div class="container">
-          <span> </span>
-          <h2></h2>
-          <ul></ul>
+          <div class="box-title">
+            <span class="box-title__decoration"></span>
+            <h2 class="title-second">Popular Actors & Directors ></h2>
+          </div>
+          <!-- <ul class="actors">
+            <li class="actors__item">
+              <a href="#" class="link actors__link">
+                <img src="./img/1.jpg" alt="" />
+              </a>
+            </li>
+          </ul> -->
+          <div class="swiper mySwiper_2">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/1.jpg" alt="Films 'After'" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/2 (1).jpg" alt="Films 'After'" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/3 (1).jpg" alt="Films 'After'" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/4 (1).jpg" alt="Films 'After'" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/5.jpg" alt="Films 'After'" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/6 (1).jpg" alt="Films 'After'" />
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </section>
       <section>
@@ -270,5 +363,9 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <!-- <script src="./js/create-markup.js"></script> -->
+
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
