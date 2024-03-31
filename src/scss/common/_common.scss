@@ -20,9 +20,29 @@ body {
 .title-second {
   color: rgb(255, 255, 255);
   font-family: var(--font-family);
-  font-size: 28px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: left;
+}
+
+.third-title {
+  color: rgb(255, 255, 255);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.end-section {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.action {
+  display: block;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: capitalize;
 }

@@ -75,7 +75,12 @@
             of catastrophic proportions.
           </p>
           <div class="box-button">
-            <button class="gradient-btn">Watch</button>
+            <button class="gradient-btn">
+              <svg class="box-button__icon" width="14" height="14">
+                <use href="./icons/sprite.svg#icon-play"></use>
+              </svg>
+              Watch
+            </button>
             <button class="box-button__more-info">More information</button>
           </div>
         </div>
@@ -91,18 +96,27 @@
             <div class="swiper mySwiper_2">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <a href="#">
-                    <img src="./img/films_After.jpg" alt="Films 'After'" />
-                  </a>
-                </li>
-                <li class="swiper-slide">
-                  <a href="#">
-                    <img src="./img/films_Dunkirc.jpg" alt="Films 'After'" />
+                  <a class="link swiper__link" href="#">
+                    <img
+                      class="swiper__films"
+                      src="./img/films_After.jpg"
+                      alt="Films 'After'"
+                    />
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="#">
                     <img
+                      class="swiper__films"
+                      src="./img/films_Dunkirc.jpg"
+                      alt="Films 'After'"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="swiper__films"
                       src="./img/films_Emansipation.jpg"
                       alt="Films 'After'"
                     />
@@ -111,6 +125,7 @@
                 <li class="swiper-slide">
                   <a href="#">
                     <img
+                      class="swiper__films"
                       src="./img/films_The_Enormity_of_life.jpg"
                       alt="Films 'After'"
                     />
@@ -118,12 +133,17 @@
                 </li>
                 <li class="swiper-slide">
                   <a href="#">
-                    <img src="./img/films_Vanitas.jpg" alt="Films 'After'" />
+                    <img
+                      class="swiper__films"
+                      src="./img/films_Vanitas.jpg"
+                      alt="Films 'After'"
+                    />
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="#">
                     <img
+                      class="swiper__films"
                       src="./img/films_Soething_like_perfect.jpg"
                       alt="Films 'After'"
                     />
@@ -132,7 +152,6 @@
               </ul>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="trending-movies">
@@ -145,6 +164,7 @@
                 <li class="swiper-slide">
                   <a href="#">
                     <img
+                      class="swiper__films"
                       src="./img/films_Maturing_youth.jpg"
                       alt="Films 'After'"
                     />
@@ -152,32 +172,46 @@
                 </li>
                 <li class="swiper-slide">
                   <a href="#">
-                    <img src="./img/films_Leap_year.jpg" alt="Films 'After'" />
-                  </a>
-                </li>
-                <li class="swiper-slide">
-                  <a href="#">
-                    <img src="./img/films_Oak_Island.jpg" alt="Films 'After'" />
-                  </a>
-                </li>
-                <li class="swiper-slide">
-                  <a href="#">
                     <img
-                      src="./img/films_Steel_legal.jpg"
-                      alt="Films 'After'"
+                      class="swiper__films"
+                      src="./img/films_Leap_year.jpg"
+                      alt="Films 'Leap year'"
                     />
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="#">
-                    <img src="./img/films_Interloock.jpg" alt="Films 'After'" />
+                    <img
+                      class="swiper__films"
+                      src="./img/films_Oak_Island.jpg"
+                      alt="Films 'Oak Island'"
+                    />
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="#">
                     <img
+                      class="swiper__films"
+                      src="./img/films_Steel_legal.jpg"
+                      alt="Films 'Steel legal'"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="swiper__films"
+                      src="./img/films_Interloock.jpg"
+                      alt="Films 'Inerlock'"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img
+                      class="swiper__films"
                       src="./img/films_The_black_eho.jpg"
-                      alt="Films 'After'"
+                      alt="Films 'The black Eho'"
                     />
                   </a>
                 </li>
@@ -269,43 +303,67 @@
             <span class="box-title__decoration"></span>
             <h2 class="title-second">Popular Actors & Directors ></h2>
           </div>
-          <!-- <ul class="actors">
-            <li class="actors__item">
-              <a href="#" class="link actors__link">
-                <img src="./img/1.jpg" alt="" />
-              </a>
-            </li>
-          </ul> -->
+
           <div class="swiper mySwiper_2">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <a href="#">
-                  <img src="./img/1.jpg" alt="Films 'After'" />
+                <a class="link swiper__link" href="#">
+                  <img
+                    class="swiper__img-actors"
+                    src="./img/1.jpg"
+                    alt="Films 'After'"
+                  />
+                  <h3 class="third-title">Samantha Bowen</h3>
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
-                  <img src="./img/2 (1).jpg" alt="Films 'After'" />
+                <a class="link swiper__link" href="#">
+                  <img
+                    class="swiper__img-actors"
+                    src="./img/6 (1).jpg"
+                    alt="Films 'After'"
+                  />
+                  <h3 class="third-title">Rhys Birch</h3>
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
-                  <img src="./img/3 (1).jpg" alt="Films 'After'" />
+                <a class="link swiper__link" href="#">
+                  <img
+                    class="swiper__img-actors"
+                    src="./img/2 (1).jpg"
+                    alt="Films 'After'"
+                  />
+                  <h3 class="third-title">James Holloway</h3>
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
-                  <img src="./img/4 (1).jpg" alt="Films 'After'" />
+                <a class="link swiper__link" href="#">
+                  <img
+                    class="swiper__img-actors"
+                    src="./img/3 (1).jpg"
+                    alt="Films 'After'"
+                  />
+                  <h3 class="third-title">Joshua Walton</h3>
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
-                  <img src="./img/5.jpg" alt="Films 'After'" />
+                <a class="link swiper__link" href="#">
+                  <img
+                    class="swiper__img-actors"
+                    src="./img/4 (1).jpg"
+                    alt="Films 'After'"
+                  />
+                  <h3 class="third-title">Patrick Elliott</h3>
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
-                  <img src="./img/6 (1).jpg" alt="Films 'After'" />
+                <a class="link swiper__link" href="#">
+                  <img
+                    class="swiper__img-actors"
+                    src="./img/5.jpg"
+                    alt="Films 'After'"
+                  />
+                  <h3 class="third-title">Morgan O'Neill</h3>
                 </a>
               </li>
             </ul>
@@ -314,53 +372,98 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="baners">
         <div class="container">
-          <div></div>
-          <div></div>
+          <div class="baners__coming-soon">
+            <a class="link baners__link" href="#">
+              <img
+                class="baners__img"
+                src="./img/baner_END_SECTION_1_bg.jpg"
+                alt="Big Buck Bunny"
+              />
+              <div class="baners__box">
+                <img
+                  class="baners__img__coming-soon"
+                  src="./img/baner_END_SECTION_2.webp"
+                  alt="Comming soon"
+                />
+                <h2 class="title-second end-section">Comming Soon...</h2>
+              </div>
+            </a>
+          </div>
+          <div class="baners__action">
+            <h2 class="title-second action">
+              Are You New Here ?<br />
+              Don’t wait, Register Now.
+            </h2>
+            <button class="gradient-btn baners__button" type="button">
+              Register Now
+            </button>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer>
-      <div>
-        <svg>
-          <use></use>
-        </svg>
+    <footer class="footer">
+      <div class="container">
+        <div class="box-logo">
+          <a class="link footer__logo" href="#">
+            <img src="./icons/Logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__box-list">
+          <ul class="list info-list">
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"
+                >Voice over and Subtitle
+              </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Media Center </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Privacy </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Contact us</a>
+            </li>
+          </ul>
+          <ul class="list info__list">
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#">Voice Description </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Investor Relations </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Legal Provisions </a>
+            </li>
+          </ul>
+          <ul class="list info__list">
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Help Center </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Job Opportunities </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Cookies Preferences </a>
+            </li>
+          </ul>
+          <ul class="list info__list">
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Gift Cards </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#"> Terms of Use </a>
+            </li>
+            <li class="info-list__item">
+              <a class="link info-list__link" href="#">
+                Corporate Informations
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li>
-          <a> </a>
-        </li>
-        <li>
-          <a> </a>
-        </li>
-        <li>
-          <a> </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a> </a>
-        </li>
-        <li>
-          <a> </a>
-        </li>
-        <li>
-          <a> </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a> </a>
-        </li>
-        <li>
-          <a> </a>
-        </li>
-        <li>
-          <a> </a>
-        </li>
-      </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>

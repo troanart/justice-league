@@ -21,11 +21,31 @@ body {
 .title-second {
   color: rgb(255, 255, 255);
   font-family: var(--font-family);
-  font-size: 28px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: left;
+}
+
+.third-title {
+  color: rgb(255, 255, 255);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.end-section {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.action {
+  display: block;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: capitalize;
 }
 
 .container {
@@ -163,6 +183,31 @@ address {
   transition: fill var(--white-color-text);
 }
 
+.footer {
+  background-color: rgb(16, 16, 18);
+}
+.footer__box-list {
+  display: flex;
+  gap: 10px;
+}
+
+.info-list {
+  width: 25%;
+}
+.info-list__link {
+  font-family: var(--font-family);
+  word-wrap: none;
+  color: var(--subtitle-text-color);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.box-logo {
+  padding: 15px 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -232,9 +277,19 @@ address {
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+  transition: 0.2s linear;
+}
+.box-button__more-info:hover, .box-button__more-info:focus {
+  background-color: #ded8d8;
+}
+.box-button__icon {
+  margin-right: 5px;
 }
 
 .gradient-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background: var(--gradient-background);
   border: none;
@@ -246,6 +301,11 @@ address {
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+  transition: 0.2s linear;
+  box-shadow: 0px 4px 50px 0px rgba(50, 108, 255, 0.5);
+}
+.gradient-btn:hover, .gradient-btn:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3c82f8;
 }
 
 .films {
@@ -326,6 +386,55 @@ address {
 .geners__icon {
   width: 50px;
   height: 50px;
+}
+
+.actors {
+  padding: 25px 0 0 0;
+}
+
+.baners {
+  padding: 15px 0 15px 0;
+}
+.baners__action {
+  position: relative;
+  padding: 15px 5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.baners__action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("/src/img/baner_FOOTER_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(50px);
+  background-color: linear-gradient(0deg, rgb(0, 0, 0) 63.664%, rgb(255, 255, 255) 155.852%);
+  opacity: 0.5;
+}
+.baners__coming-soon {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.baners__img__coming-soon {
+  margin: 0 auto 20px auto;
+}
+.baners__box {
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 30px 30px 30px 0px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(47.1deg, rgb(13, 26, 115) 29.671%, rgb(0, 0, 0) 70.522%);
+}
+.baners__button {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
 }
 
 :root {
@@ -426,4 +535,25 @@ address {
 
 :root {
   --color-8: var(--romance);
+}
+
+.swiper {
+  margin-top: 5px;
+}
+.swiper__films {
+  border-radius: 24px;
+  filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
+}
+.swiper__link {
+  text-align: center;
+  width: fit-content;
+  overflow: hidden;
+}
+.swiper__img-actors {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.mySwiper_2 {
+  padding: 40px 0;
 }/*# sourceMappingURL=main.css.map */

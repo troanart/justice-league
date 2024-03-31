@@ -69,10 +69,23 @@
     line-height: 20px;
     letter-spacing: 0%;
     text-align: left;
+    transition: 0.2s linear;
+
+    &:hover,
+    &:focus {
+      background-color: #ded8d8;
+    }
+  }
+
+  &__icon {
+    margin-right: 5px;
   }
 }
 
 .gradient-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background: var(--gradient-background);
   border: none;
@@ -84,4 +97,11 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+  transition: 0.2s linear;
+  box-shadow: 0px 4px 50px 0px rgba(50, 108, 255, 0.5);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3c82f8;
+  }
 }
