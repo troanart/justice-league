@@ -1,5 +1,4 @@
 .hero {
-  padding: 15px 0;
   background-image: url('/src/img/Лига.png');
   background-size: cover;
   background-position: center;
@@ -39,17 +38,19 @@
   }
 
   &__text {
-    background: #000;
     padding: 6px 15px;
   }
 
   &__description {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
     margin: 5px 0 25px 0;
+    border-radius: 15px;
     font-family: var(--font-family);
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
-    color: rgb(194, 194, 194);
+    color: rgb(255, 251, 251);
   }
 }
 

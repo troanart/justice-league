@@ -27,10 +27,10 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
-        <img src="./icons/Logo.svg" alt="" />
+      <a class="link" href="#">
+        <img class="Logo" src="./icons/Logo.svg" alt="Logo" />
       </a>
-      <nav>
+      <nav class="nav">
         <button
           type="button"
           class="menu-toggle js-open-menu"
@@ -48,13 +48,52 @@
               <use href="./icons/sprite.svg#icon-close"></use>
             </svg>
           </button>
+
+          <ul class="list icon-list">
+            <li class="icon-list__item">
+              <a class="icon-list_link link" href="#">
+                <svg width="40" height="40" class="icon-list__icon">
+                  <use href="./icons/sprite.svg#icon-loop"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list_link link" href="#">
+                <svg width="40" height="40" class="icon-list__icon">
+                  <use href="./icons/sprite.svg#icon-notification"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list__item">
+              <a class="icon-list_link link" href="#">
+                <svg width="40" height="40" class="icon-list__icon">
+                  <use href="./icons/sprite.svg#icon-person"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list nav-list">
+            <li class="nav-list__item">
+              <a class="link nav-list__link third-title" href="3"> Home </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="link nav-list__link third-title" href="3"> TV Shows </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="link nav-list__link third-title" href="3"> Movies </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="link nav-list__link third-title" href="3"> Series </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="main-title">Zack Snyder's Justice League</h1>
+          <h1 class="first-title">Zack Snyder's Justice League</h1>
           <div class="information">
             <p class="information__year">2021</p>
             <span class="information__age">
@@ -90,7 +129,7 @@
           <div>
             <div class="box-title">
               <span class="box-title__decoration"></span>
-              <h2 class="title-second">Trending TV Shows ></h2>
+              <a href="#" class="link box-title__link">Trending TV Shows ></a>
             </div>
 
             <div class="swiper mySwiper_2">
@@ -157,7 +196,7 @@
           <div class="trending-movies">
             <div class="box-title">
               <span class="box-title__decoration"></span>
-              <h2 class="title-second">Trending Movies ></h2>
+              <a href="#" class="link box-title__link">Trending Movies ></a>
             </div>
             <div class="swiper mySwiper_2">
               <ul class="swiper-wrapper">
@@ -227,7 +266,7 @@
         <div class="container">
           <div class="box-title">
             <span class="box-title__decoration"></span>
-            <h2 class="title-second">Popular Genres ></h2>
+            <a href="#" class="link box-title__link">Popular Genres ></a>
           </div>
           <ul class="list geners">
             <li class="geners__item">
@@ -301,7 +340,9 @@
         <div class="container">
           <div class="box-title">
             <span class="box-title__decoration"></span>
-            <h2 class="title-second">Popular Actors & Directors ></h2>
+            <a href="#" class="link box-title__link"
+              >Popular Actors & Directors ></a
+            >
           </div>
 
           <div class="swiper mySwiper_2">
@@ -387,12 +428,12 @@
                   src="./img/baner_END_SECTION_2.webp"
                   alt="Comming soon"
                 />
-                <h2 class="title-second end-section">Comming Soon...</h2>
+                <h2 class="second-title end-section">Comming Soon...</h2>
               </div>
             </a>
           </div>
           <div class="baners__action">
-            <h2 class="title-second action">
+            <h2 class="second-title action">
               Are You New Here ?<br />
               Don’t wait, Register Now.
             </h2>

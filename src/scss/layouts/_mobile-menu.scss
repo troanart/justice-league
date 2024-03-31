@@ -1,13 +1,14 @@
 .menu-container {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  flex-direction: column;
+  width: 50vw;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(29, 27, 27);
   z-index: 5;
   transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
@@ -76,14 +77,50 @@
 .open-svg {
   fill: white;
   display: inline-block;
-  width: 3em;
-  height: 3rem;
+  width: 35px;
+  height: 35px;
   transition: fill var(--white-color-text);
 }
 .close-svg {
-  stroke: black;
+  stroke: rgb(255, 255, 255);
   display: inline-block;
   width: 50px;
   height: 50px;
   transition: fill var(--white-color-text);
+}
+
+.icon-list {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 55px;
+
+  &__item {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(143, 118, 118, 0.5);
+    }
+  }
+
+  &__icon {
+    width: 25px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
+  &__link {
+  }
 }
