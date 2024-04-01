@@ -6,26 +6,67 @@
 
   &__box-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
     gap: 10px;
+
+    @include mq('desctop') {
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-left: 84px;
+      gap: 35px;
+    }
+  }
+
+  @include mq('desctop') {
+    padding: 70px 245px;
   }
 }
 
 .info-list {
-  width: 25%;
+  // width: 50%;
+  color: #fff;
+
   &__item {
+    width: fit-content;
+
+    @include mq('desctop') {
+      margin-bottom: 20px;
+      width: 100%;
+    }
   }
 
   &__link {
     font-family: var(--font-family);
-    word-wrap: none;
+    white-space: nowrap;
     color: var(--subtitle-text-color);
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0%;
+    opacity: 0.5;
+    transition: color cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    @include mq('desctop') {
+      font-size: 18px;
+    }
+  }
+
+  @include mq('tablet') {
+    width: auto;
   }
 }
 
 .box-logo {
   padding: 15px 0;
+
+  @include mq('desctop') {
+    padding: 0;
+  }
 }

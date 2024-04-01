@@ -3,13 +3,20 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom: 2px solid #2f2e2e;
+
+  @include mq('tablet') {
+    background-image: none;
+  }
+
+  @include mq('desctop') {
+    padding: 0;
+  }
 }
 
 .information {
   font-family: var(--font-family);
   margin: 5px 0;
-
-  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -39,6 +46,7 @@
 
   &__text {
     padding: 6px 15px;
+    background: black;
   }
 
   &__description {
@@ -51,6 +59,23 @@
     font-weight: 400;
     line-height: 20px;
     color: rgb(255, 251, 251);
+
+    @include mq('tablet') {
+      padding: 10px 5px;
+      margin: 15px 0px;
+      background: rgba(62, 59, 59, 0.8);
+    }
+
+    @include mq('desctop') {
+      margin-bottom: 35px;
+      background: none;
+      color: rgb(194, 194, 194);
+      line-height: 28px;
+    }
+  }
+
+  @include mq('desctop') {
+    margin: 39px 195px 32px 0;
   }
 }
 
@@ -76,10 +101,23 @@
     &:focus {
       background-color: #ded8d8;
     }
+
+    @include mq('desctop') {
+      gap: 30px;
+      padding: 15px 30px;
+      font-weight: 800;
+      color: rgb(50, 50, 50);
+    }
   }
 
   &__icon {
     margin-right: 5px;
+
+    @include mq('desctop') {
+      margin-right: 15px;
+      width: 14px;
+      height: 18px;
+    }
   }
 }
 
@@ -104,5 +142,23 @@
   &:hover,
   &:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 4px #3c82f8;
+  }
+
+  @include mq('desctop') {
+    padding: 15px 30px;
+  }
+}
+
+.see-more {
+  padding: 15px 35px;
+}
+
+.box-img {
+  @include mq('tablet') {
+    background-image: url('/src/img/Лига.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
   }
 }

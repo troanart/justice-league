@@ -4,7 +4,16 @@
   width: 100%;
   background: #000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5px 5px;
+
+  @include mq('desctop') {
+    padding: 15px 79px 15px 85px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }

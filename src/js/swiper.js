@@ -1,8 +1,10 @@
 var swiper = new Swiper('.mySwiper', {});
 
-var swiper = new Swiper('.mySwiper_2', {
-  spaceBetween: 30,
-  centeredSlides: true,
+const screenWidth = window.innerWidth;
+
+let swiperParams = {
+  spaceBetween: 1,
+  centeredSlides: false,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -15,4 +17,10 @@ var swiper = new Swiper('.mySwiper_2', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-});
+};
+
+if (screenWidth >= 768) {
+  swiperParams.slidesPerView = 3;
+}
+
+var swiper = new Swiper('.mySwiper_2', swiperParams);

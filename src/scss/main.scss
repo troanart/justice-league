@@ -1,3 +1,8 @@
+// utils
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/swipers';
+
 // common
 
 @import './common/common';
@@ -13,8 +18,4 @@
 @import './layouts/films';
 @import './layouts/actors';
 @import './layouts/baners';
-
-// utils
-@import './utils/mixin';
-@import './utils/variables';
-@import './utils/swipers';
+@import './layouts/geners';

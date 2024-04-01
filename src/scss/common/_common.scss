@@ -14,9 +14,18 @@ body {
 .first-title {
   font-family: var(--font4);
   line-height: 45px;
-  font-size: 40px;
-}
+  font-size: calc(16px + 1vw);
 
+  @include mq('tablet') {
+    width: 260px;
+  }
+
+  @include mq('desctop') {
+    font-size: 80px;
+    width: auto;
+    line-height: 70px;
+  }
+}
 .second-title {
   color: rgb(255, 255, 255);
   font-family: var(--font-family);
@@ -29,26 +38,37 @@ body {
 .third-title {
   color: rgb(255, 255, 255);
   font-family: var(--font-family);
-  font-size: 15px;
+  font-size: calc(15px + 0.5vw);
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
-}
 
-.end-section {
-  font-size: 40px;
-  font-weight: 700;
+  @include mq('desctop') {
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
 
 .action {
   display: block;
-  font-size: 30px;
+  font-size: calc(30px + 1vw);
   line-height: 35px;
   text-transform: capitalize;
+
+  @include mq('desctop') {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+  }
 }
 
-section {
-  padding: 15px 0;
+.end-section {
+  font-size: calc(40px + 1vw);
+  font-weight: 700;
+
+  @include mq('desctop') {
+    font-size: 64px;
+  }
 }
 
 .transition {
@@ -60,6 +80,10 @@ section {
   }
 }
 
-main {
+.main {
   padding-top: 80px;
+
+  @include mq('mobile') {
+    padding-top: 80px;
+  }
 }

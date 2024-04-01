@@ -1,5 +1,43 @@
 .container {
-  width: 100%;
+  max-width: 1441px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.information-container {
+  @include mq('tablet') {
+    max-width: 40%;
+    padding: 10px 0;
+  }
+
+  @include mq('desctop') {
+    padding: 122px 29px 203px 0px;
+  }
+}
+
+.hero-container {
+  @include mq('tablet') {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.films-container {
+  @include mq('tablet') {
+    width: auto;
+  }
+}
+
+.footer-container {
+  @include mq('tablet') {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include mq('desctop') {
+    justify-content: start;
+    align-items: normal;
+  }
 }

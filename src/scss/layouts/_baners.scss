@@ -1,5 +1,6 @@
 .baners {
   &__action {
+    max-width: 1224px;
     position: relative;
     padding: 15px 5px;
     overflow: hidden;
@@ -25,20 +26,50 @@
       );
       opacity: 0.5;
     }
+
+    @include mq('tablet') {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    @include mq('desctop') {
+      padding: 71px 152px 71px 57px;
+      justify-content: center;
+      gap: 82px;
+      margin: 0 auto 121px auto;
+    }
   }
 
   &__coming-soon {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
+
+    @include mq('desctop') {
+      margin-bottom: 121px;
+    }
   }
 
   &__link {
+    @include mq('tablet') {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__img {
     &__coming-soon {
       margin: 0 auto 20px auto;
+      @include mq('tablet') {
+        width: 50%;
+        margin: 15px auto 20px auto;
+      }
+
+      @include mq('desctop') {
+        width: 294px;
+        margin: 71px auto 31px auto;
+      }
     }
   }
 
@@ -51,11 +82,30 @@
       rgb(13, 26, 115) 29.671%,
       rgb(0, 0, 0) 70.522%
     );
+
+    @include mq('tablet') {
+      width: 50%;
+      padding: 0;
+    }
   }
 
   &__button {
     position: relative;
     z-index: 1;
     margin-top: 20px;
+
+    @include mq('tablet') {
+      margin-top: 0;
+    }
+
+    @include mq('desctop') {
+      padding: 15px 18px;
+    }
+  }
+
+  &__box-poster {
+    @include mq('tablet') {
+      width: 50%;
+    }
   }
 }
