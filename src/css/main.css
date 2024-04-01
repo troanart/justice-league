@@ -600,7 +600,7 @@ address {
 }
 
 .hero {
-  background-image: url("../../img/Лига.png");
+  background-image: url("./scr/img/Лига.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
