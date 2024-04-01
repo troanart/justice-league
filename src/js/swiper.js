@@ -3,7 +3,7 @@ var swiper = new Swiper('.mySwiper', {});
 const screenWidth = window.innerWidth;
 
 let swiperParams = {
-  spaceBetween: 1,
+  spaceBetween: 15,
   centeredSlides: false,
   autoplay: {
     delay: 2500,
@@ -21,6 +21,7 @@ let swiperParams = {
 
 if (screenWidth >= 768) {
   swiperParams.slidesPerView = 3;
+  swiperParams.spaceBetween = 1;
 }
 
 var swiper = new Swiper('.mySwiper_2', swiperParams);

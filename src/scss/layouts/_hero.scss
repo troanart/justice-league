@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('./scr/img/Лига.png');
+  background-image: url('../img/Лига.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@
 
 .box-img {
   @include mq('tablet') {
-    background-image: url('/src/img/Лига.png');
+    background-image: url('../img/Лига.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
